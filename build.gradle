@@ -28,6 +28,36 @@ android {
 
 }
 
+
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
+    classpath 'com.android.tools.build:gradle:1.5.0'
+            classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.4'
+            classpath 'com.github.dcendents:android-maven-gradle-plugin:1.3'
+}
+
+
+ext {
+bintrayRepo = 'maven'
+bintrayName = 'html5'
+
+publishedGroupId = 'com.umeng.community'
+libraryName = 'release-umeng-community-html5-sdk'
+artifact = 'release-community-html5'
+
+libraryDescription = 'release SDK for umeng community (html 5 version)'
+
+siteUrl = 'https://github.com/incomingflyingbrick/release-umeng-community-h5-ui'
+gitUrl = 'https://github.com/incomingflyingbrick/release-umeng-community-h5-ui.git'
+
+libraryVersion = '1'
+
+developerId = 'incomingflyingbrick'
+developerName = 'Ya Zhou'
+developerEmail = 'yazhou.jyz@alibaba-inc.com'
+
+licenseName = 'The Apache Software License, Version 2.0'
+licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+allLicenses = ["Apache-2.0"]
 }
