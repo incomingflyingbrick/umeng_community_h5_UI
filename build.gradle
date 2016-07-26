@@ -40,7 +40,7 @@ dependencies {
 
 ext {
 bintrayRepo = 'maven'
-bintrayName = 'html5'
+bintrayName = 'release-html5-sdk'
 
 publishedGroupId = 'com.umeng.community'
 libraryName = 'release-umeng-community-html5-sdk'
@@ -61,3 +61,6 @@ licenseName = 'The Apache Software License, Version 2.0'
 licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
 allLicenses = ["Apache-2.0"]
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
